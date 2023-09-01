@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>TODO LIST ODIN PROJECTS</h1>
+    </header>
+    <section class="sidebar">
+        <div id="title-sidebar">
+            <h2>PROJECTS</h2>
+        </div>
+        <div>
+            <form method="dialog" action="" id="new-project">
+                <fieldset>
+                    <input id="project-name"  name="project-name" type="text">
+                    <button type="submit" id="submit-project">Create project</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="projects">
+            <div>project1</div>
+        </div>
+    </section>
+    <section class="content-wrapper">
+        <div class="content">
+            <dialog class="todo-dialog">
+                <form method="dialog">
+                    <fieldset>
+                        <label for="check">Checked</label>
+                        <input id="check" name="check" type="checkbox">
+                    </fieldset>
+                    <fieldset>
+                        <label for="title">Title</label>
+                        <input id="title" name="title" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="description">Description</label>
+                        <input id="description" name="description" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="due-date">Due Date</label>
+                        <input id="due-date" name="due-date" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="urgency-level">urgency</label>
+                        <select name="urgency-level" id="urgency-level">
+                            <option value="urgent">urgent</option>
+                            <option value="meh">meh</option>
+                        </select>
+                    </fieldset>
+                    <button type="submit" id="submit-todo">submit</button>
+                    <button type="submit" id="edit-todo">Edit</button>
+                </form>
+            </dialog>
+            <div>
+                <button id="todo-button">new task</button>
+            </div>
+            <div id="content-tasks">
+                
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="main.js" type="text/javascript"></script>
+</html>
